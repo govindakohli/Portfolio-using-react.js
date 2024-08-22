@@ -1,0 +1,178 @@
+.project {
+    width: 100%;
+    height: auto;
+}
+.Project-greeting {
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+}
+.Project-headings {
+    padding: 2rem 5rem ;
+}
+.Project-tittle {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.container-1 {
+    margin: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.container-1:hover{
+    box-shadow: none;
+    border: 1px solid black;
+}
+.project1-image {
+    height: 20rem;
+    width: 30rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 3rem;
+}
+.Project1-heading {
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.project1-details {
+    width: 60%;
+    height: auto;
+    padding: 1rem;
+}
+.project1-about {
+    font-size: 1.5rem;
+}
+.project1-buttons {
+    display: flex;
+    justify-content: center;
+}
+.project1-github-btn , .project1-live-btn {
+    height: 3.5rem;
+    width: 10rem;
+    font-size: 1rem;
+    margin: 1rem;
+    background: white;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+
+}
+.project1-github-btn:active , .project1-live-btn:active {
+    color: white;
+    background: rgb(47, 0, 128);
+    font-size:1.2rem ;
+}
+
+.container-2 {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 8rem 2rem 2rem 2rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.container-2:hover {
+    box-shadow: none;
+    border: 1px solid black;
+}
+
+@media  (max-width: 1430px){
+    .project1-details {
+        /* border: 2px solid black; */
+        width: 95%;
+        height: auto;
+        padding: 1rem;
+    }
+    .project1-image {
+        height: 25rem;
+        width: 40rem;
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .project {
+        width: 100%;
+        height: auto;
+    }
+    .project1-details {
+        /* border: 2px solid black; */
+        width: 95%;
+        height: auto;
+        padding: 1rem;
+    }
+    .project1-image {
+        height: 15rem;
+        width: 20rem;
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 3rem;
+    }
+    .project1-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .project1-github-btn , .project1-live-btn {
+        height: 3rem;
+        width: 8rem;
+        font-size: 0.75rem;
+        margin: 0.75rem;
+        background: white;
+        border: 2px solid black;
+        border-radius: 2rem;
+        
+    
+    }
+    .project1-github-btn:active , .project1-live-btn:active {
+        color: white;
+        background: rgb(47, 0, 128);
+        font-size:1rem ;
+    }
+
+}
+
+
+@media  (max-width: 395px){
+    .project {
+        width: 38rem;
+        height: auto;
+    }
+    .Project-greeting{
+        text-align: center;
+        font-size: 1rem;
+        color: grey;
+    }
+    .Project-headings{
+        padding: 2rem 5rem ;
+    }
+    .Project-tittle  {
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: bolder;
+    }
+    
+    .project1-details {
+        width: 95%;
+        height: auto;
+        padding: 1rem;
+    }
+    .project1-image {
+        height: 15rem;
+        width: 20rem;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        border-radius: 3rem;
+    }
+   
+}

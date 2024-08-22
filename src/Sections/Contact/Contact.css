@@ -1,0 +1,187 @@
+.contact{
+    height: auto;
+    width: 100%;
+}
+.Contact-greeting {
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+    padding-top: 1rem;
+}
+
+.Contact-headings{
+    padding: 2rem 5rem ;
+}
+.Contact-title{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    font-size: 1.2rem;
+
+}
+.contact-details {
+    margin: 1rem;
+}
+.contact-details a {
+    text-decoration: none;
+    color: black;
+}
+.contact-details a i {
+    margin: 0.5rem;
+}
+.Contact-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.contact-name , .contact-Email {
+    height: 4rem;
+    width: 30rem;
+    border-radius: 3rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    margin: 1rem;
+}
+
+.contact-name::placeholder , .contact-Email::placeholder {
+    padding: 1rem;
+    font-size: 1rem;
+}
+.contact-message {
+    height: Auto;
+    width: 30rem;
+    border-radius: 3rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    margin: 1rem;
+}
+.contact-message::placeholder{
+    font-size: 1rem;
+}
+.send-btn {
+    height:3rem ;
+    width: 8rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    background: white;
+}
+.send-btn:active{
+    color: white;
+    background: rgb(47, 0, 128);
+    font-size:1.2rem ;
+    border: 2px solid rgb(47, 0, 128);
+}
+
+
+
+@media (max-width: 767px){
+
+    .Contact-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        
+    }
+    .contact-name , .contact-Email {
+        height: 3.5rem;
+        width: 25rem;
+        border-radius: 3rem;
+        padding: 1.5rem;
+        font-size: 1rem;
+        margin: 1rem;
+        border: 2px solid black;
+    }
+    
+    .contact-name::placeholder , .contact-Email::placeholder {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .contact-message {
+        height: Auto;
+        width: 25rem;
+        border-radius: 3rem;
+        padding: 1.5rem;
+        font-size: 1rem;
+        border: 2px solid black;
+        margin: 1rem;
+    }
+    .contact-message::placeholder{
+        font-size: 1rem;
+    }
+    .send-btn {
+        height:3rem ;
+        width: 8rem;
+        border-radius: 1.5rem;
+        font-size: 1rem;
+        text-align: center;
+        background: white;
+    }
+    .send-btn:active{
+        color: white;
+        background: rgb(47, 0, 128);
+        font-size:1.2rem ;
+        border: 2px solid rgb(47, 0, 128);
+    }
+}
+
+
+@media  (max-width: 395px){
+    .contact{
+        height: auto;
+        width: 38rem;
+    }
+    .Contact-greeting {
+        text-align: center;
+        font-size: 1rem;
+        color: grey;
+    }
+    
+    .Contact-headings{
+        padding: 2rem 5rem ;
+    }
+    .Contact-title{
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: bolder;
+    }
+    .contact-name , .contact-Email {
+        height: 3rem;
+        width: 25rem;
+        border-radius: 3rem;
+        padding: 1.5rem;
+        font-size: 1rem;
+        border: 1px solid black;
+        margin: 0.75rem;
+    }
+    
+    .contact-name::placeholder , .contact-Email::placeholder {
+        padding: 0.75rem;
+        font-size: 0.75rem;
+    }
+    .contact-message {
+        height: Auto;
+        width: 25rem;
+        border-radius: 3rem;
+        padding: 0.75rem;
+        font-size: 0.75rem;
+        border: 1px solid black;
+        margin: 0.75rem;
+    }
+}

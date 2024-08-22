@@ -1,0 +1,129 @@
+.About-section {
+    height: 45rem;
+    width: 100%;
+    /* margin: 1rem; */
+}
+
+.About-greeting {
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+}
+.About-headings {
+    padding: 2rem 5rem ;
+}
+.About-tittle {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.About-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.About-subContainer {
+    height: auto;
+    width: 45rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    margin: 1rem;   
+}
+.About-profile-image {
+    height: 25rem;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+.Education-tittle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.Education-sub-tittle {
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+    padding:0rem 1rem ;
+    
+}
+.About-bio {
+    font-size: 1.1rem;
+    text-align: start;
+    padding: 2rem;
+}
+
+@media (max-width: 767px) {
+    .About-section {
+        height: 50rem;
+        width: 100%;
+    }
+    .About-bio {
+        font-size: 1rem;
+        text-align: start;
+        padding: 1rem;
+    }
+    .About-profile-image {
+        height: 20rem;
+        border-radius: 2rem;
+        margin: .75rem;
+    }
+    
+}
+ @media  (max-width: 395px) { 
+    .About-section {
+        height: 55rem;
+        width: 38rem;
+    }
+    .About-greeting {
+        text-align: center;
+        font-size: 1rem;
+        color: grey;
+    }
+    .About-headings {
+        padding: 2rem 5rem ;
+    }
+    .About-tittle {
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: bolder;
+    }
+    .About-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    .About-subContainer {
+        height: auto;
+        width: 45rem;
+        border: 2px solid black;
+        border-radius: 2rem;
+        margin: 1rem;   
+    }
+    .About-profile-image {
+        height: 25rem;
+        border-radius: 2rem;
+        margin: 1rem;
+    }
+    .Education-tittle {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+    .Education-sub-tittle {
+        text-align: center;
+        font-size: 1rem;
+        color: grey;
+        padding:0rem 1rem ;
+        
+    }
+    .About-bio {
+        font-size: 1.1rem;
+        text-align: start;
+        padding: 2rem;
+    }
+    
+}
