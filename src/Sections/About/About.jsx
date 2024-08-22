@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import DP from "../images/dp.jpg"
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
           <div>
             <img
               className="About-profile-image"
-              src="https://img.freepik.com/premium-photo/stylish-man-flat-vector-profile-picture-ai-generated_606187-310.jpg"
+              src={DP}
               alt="Profile picture of Govinda"
             />
           </div>
