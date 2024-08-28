@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   padding: 5px;
-  height: 100vh; /* Full viewport height */
+  height: 90vh; /* Full viewport height */
 }
 
 /* Hero Greeting */
@@ -81,7 +81,7 @@
   }
   
   .hero_section {
-    height: 100vh; /* Adjust height automatically */
+    height: 90vh; /* Adjust height automatically */
     padding: 2rem 0; /* Add padding for spacing */
   }
   
@@ -106,7 +106,7 @@
   }
   
   .hero_section {
-    height: 100vh; /* Adjust height automatically */
+    height: 90vh; /* Adjust height automatically */
     padding: 3rem 0; /* Add padding for spacing */
   }
   
