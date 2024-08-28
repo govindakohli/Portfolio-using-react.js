@@ -73,7 +73,8 @@ const Contact = () => {
             className="contact-message"
             placeholder="Enter Your Message"
           />
-          <input type="submit" href="#" className="send-btn" value="Send" />
+          <input type="submit" href="/Contact" className="send-btn" value="Send" />
+         
         </form>
       </section>
     </>

@@ -1,146 +1,193 @@
+/* Hero Section */
 #hero_profile {
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   padding: 5px;
 }
+
+/* Main Hero Section */
 .hero_section {
-  height: 44rem;
   width: 100%;
-  background: rgb(47, 0, 128);
-  color: aliceblue;
+  background: linear-gradient(135deg, #283c86, #45a247); Updated Color Scheme;
+  color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 5px;
+  height: 100vh; /* Full viewport height */
 }
+
+/* Hero Greeting */
 .hero_greeting {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
-.hero_section .hero_name {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+
+/* Hero Name */
+.hero_name {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
   font-weight: bold;
 }
-.hero_profile {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-.CV_button {
-  width: 8rem;
-  height: 3rem;
-  border-radius: 1.5rem;
-  border: none;
-  margin: 1rem;
-  font-size: 1rem;
-}
-/* .CV_button:hover {
-    background: #000;
-    color: aliceblue;
-} */
-.CV_button:active {
-  background: none;
-  color: #000;
-}
-.contactinfo_button {
-  width: 8rem;
-  height: 3rem;
-  background: #000;
-  color: aliceblue;
-  border-radius: 1.5rem;
-  border: none;
-  margin: 1rem;
-  font-size: 1rem;
-}
-/* .contactinfo_button:hover {
-    color: #000;
-    background: aliceblue;
-} */
-.contactinfo_button:active {
-  background: none;
-  color: aliceblue;
-}
-.hero_icons a i {
-  color: #000;
-  margin: 0.5rem;
-  font-size: 2.5rem;
-}
-@media (max-width: 767px) {
-  /* #hero_profile {
-    height: 370px;
-    width: 370px;
-    border-radius: 50%;
-    padding: 10px;
-    margin-top: 11rem;
-  
-  } */
-  #hero_profile {
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-    padding: 5px;
-  }
-  .hero_section {
-    width: 100%;
-    background: rgb(47, 0, 128);
-    height:60rem ;
-  }
 
+/* Profile Text */
+.hero_profile {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Buttons */
+.CV_button, .contactinfo_button {
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  margin: 0.5rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.CV_button {
+  background: #1d2671; /* Updated Color */
+}
+
+.CV_button:active {
+  background: #6a11cb; /* Updated Color */
+}
+
+.contactinfo_button {
+  background: #0f9b0f; /* Updated Color */
+}
+
+.contactinfo_button:active {
+  background: #38ef7d; /* Updated Color */
+}
+
+/* Social Icons */
+.hero_icons a i {
+  color: #ffffff;
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  #hero_profile {
+    height: 280px;
+    width: 280px;
+  }
+  
+  .hero_section {
+    height: 100vh; /* Adjust height automatically */
+    padding: 2rem 0; /* Add padding for spacing */
+  }
+  
   .hero_greeting {
     font-size: 1rem;
-    margin-bottom: 0.75rem;
   }
-
-  .hero_name {
-    font-size: 4rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .hero_profile {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .menu-icon {
-    display: block; 
-  }
-}
-@media (max-width: 395px) {
   
-  #hero_profile {
-    margin-top: 11rem;
-    height: 370px;
-    width: 370px;
-    border-radius: 50%;
-    padding: 5px;
-    margin-bottom: -6rem;
-  }
-  .hero_section {
-    width: 38rem;
-    background: rgb(47, 0, 128);
-    height: 70rem;
-  }
-
-  .hero_greeting {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-  }
-
   .hero_name {
-    font-size: 5rem;
-    margin-bottom: 0.75rem;
+    font-size: 3.5rem;
   }
-
+  
   .hero_profile {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .menu-icon {
-    display: block; 
+    font-size: 1.8rem;
   }
 }
 
+@media (max-width: 450px) {
+  #hero_profile {
+    height: 250px;
+    width: 250px;
+    margin-top: 2rem;
+  }
+  
+  .hero_section {
+    height: 100vh; /* Adjust height automatically */
+    padding: 3rem 0; /* Add padding for spacing */
+  }
+  
+  .hero_greeting {
+    font-size: 0.9rem;
+  }
+  
+  .hero_name {
+    font-size: 3rem;
+  }
+  
+  .hero_profile {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero_profile {
+    height: 200px;
+    width: 200px;
+    margin-top: 1rem;
+  }
+  
+  .hero_section {
+    height: 100vh; /* Adjust height automatically */
+    padding: 4rem 0; /* Add padding for spacing */
+  }
+  
+  .hero_greeting {
+    font-size: 0.8rem;
+  }
+  
+  .hero_name {
+    font-size: 2.5rem;
+  }
+  
+  .hero_profile {
+    font-size: 1.4rem;
+  }
+  
+  .CV_button, .contactinfo_button {
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+  
+  .hero_icons a i {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #hero_profile {
+    height: 180px;
+    width: 180px;
+  }
+  
+  .hero_section {
+    height: 100vh; /* Adjust height automatically */
+    padding: 5rem 0; /* Add padding for spacing */
+  }
+  
+  .hero_greeting {
+    font-size: 0.7rem;
+  }
+  
+  .hero_name {
+    font-size: 2rem;
+  }
+  
+  .hero_profile {
+    font-size: 1.2rem;
+  }
+  
+  .CV_button, .contactinfo_button {
+    width: 5rem;
+    height: 1.8rem;
+    font-size: 0.7rem;
+  }
+  
+  .hero_icons a i {
+    font-size: 1.5rem;
+  }
+}

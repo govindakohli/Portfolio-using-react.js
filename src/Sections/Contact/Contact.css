@@ -1,21 +1,24 @@
-.contact{
-    height: auto;
+.contact {
     width: 100%;
-}
-.Contact-greeting {
-    text-align: center;
-    font-size: 1rem;
-    color: grey;
-    padding-top: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Adjust to match the theme */
 }
 
-.Contact-headings{
-    padding: 2rem 5rem ;
-}
-.Contact-title{
+.Contact-headings {
     text-align: center;
-    font-size: 3.5rem;
-    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.Contact-greeting {
+    font-size: 1rem;
+    color: gray;
+}
+
+.Contact-title {
+    font-size: 2.5rem; /* Adjusted for better readability */
+    font-weight: bold;
+    color: #333; /* Adjust color to match the theme */
 }
 
 .contact-info {
@@ -25,163 +28,139 @@
     flex-wrap: wrap;
     margin: 1rem;
     font-size: 1.2rem;
+    gap: 3rem;
+}
 
-}
 .contact-details {
-    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
 }
+
 .contact-details a {
     text-decoration: none;
-    color: black;
-}
-.contact-details a i {
-    margin: 0.5rem;
-}
-.Contact-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-.contact-name , .contact-Email {
-    height: 4rem;
-    width: 30rem;
-    border-radius: 3rem;
-    padding: 1.5rem;
-    font-size: 1rem;
-    border: 2px solid black;
-    margin: 1rem;
+    color: #333; /* Adjust color to match the theme */
 }
 
-.contact-name::placeholder , .contact-Email::placeholder {
-    padding: 1rem;
-    font-size: 1rem;
+.contact-details i {
+    font-size: 1.2rem;
+    margin-right: 5px;
 }
+
+.Contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    max-width: 600px; /* Limit max width for better layout control */
+    margin: 0 auto; /* Center the form */
+}
+
+.contact-name,
+.contact-Email {
+    width: 100%;
+    max-width: 500px; /* Ensure responsiveness on larger screens */
+    height: 3rem;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #ddd; /* Adjust color to match the theme */
+    margin: 0.5rem;
+    box-sizing: border-box;
+}
+
+.contact-name::placeholder,
+.contact-Email::placeholder {
+    font-size: 0.875rem; /* Adjust placeholder font size */
+}
+
 .contact-message {
-    height: Auto;
-    width: 30rem;
-    border-radius: 3rem;
-    padding: 1.5rem;
+    width: 100%;
+    max-width: 500px; /* Ensure responsiveness on larger screens */
+    height: 150px; /* Set a fixed height for the textarea */
+    border-radius: 0.5rem;
+    padding: 0.75rem;
     font-size: 1rem;
-    border: 2px solid black;
-    margin: 1rem;
+    border: 2px solid #ddd; /* Adjust color to match the theme */
+    margin: 0.5rem;
+    box-sizing: border-box;
 }
-.contact-message::placeholder{
-    font-size: 1rem;
+
+.contact-message::placeholder {
+    font-size: 0.875rem; /* Adjust placeholder font size */
 }
+
+
 .send-btn {
-    height:3rem ;
-    width: 8rem;
-    border-radius: 1.5rem;
-    font-size: 1rem;
-    text-align: center;
-    background: white;
+    width: 100%;
+    max-width: 200px; /* Adjust width for very small screens */
+    height: 2.5rem;
+    font-size: 0.875rem; /* Adjust font size for very small screens */
 }
-.send-btn:active{
+
+.send-btn:hover {
+    background: rgb(47, 0, 128); /* Adjust color to match the theme */
     color: white;
-    background: rgb(47, 0, 128);
-    font-size:1.2rem ;
     border: 2px solid rgb(47, 0, 128);
 }
 
-
-
-@media (max-width: 767px){
-
-    .Contact-container{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        
-    }
-    .contact-name , .contact-Email {
-        height: 3.5rem;
-        width: 25rem;
-        border-radius: 3rem;
-        padding: 1.5rem;
-        font-size: 1rem;
-        margin: 1rem;
-        border: 2px solid black;
-    }
-    
-    .contact-name::placeholder , .contact-Email::placeholder {
+@media (max-width: 767px) {
+    .Contact-headings {
         padding: 1rem;
-        font-size: 1rem;
     }
+
+    .Contact-title {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .contact-name,
+    .contact-Email {
+        height: 2.75rem;
+        max-width: 100%; /* Full width for smaller screens */
+    }
+
     .contact-message {
-        height: Auto;
-        width: 25rem;
-        border-radius: 3rem;
-        padding: 1.5rem;
-        font-size: 1rem;
-        border: 2px solid black;
-        margin: 1rem;
+        height: 120px; /* Adjust height for smaller screens */
     }
-    .contact-message::placeholder{
-        font-size: 1rem;
-    }
+
     .send-btn {
-        height:3rem ;
-        width: 8rem;
-        border-radius: 1.5rem;
-        font-size: 1rem;
-        text-align: center;
-        background: white;
+        width: 100%;
+        max-width: 200px; /* Adjust width for smaller screens */
+        height: 2.5rem;
     }
-    .send-btn:active{
-        color: white;
-        background: rgb(47, 0, 128);
-        font-size:1.2rem ;
-        border: 2px solid rgb(47, 0, 128);
+    .contact-info {
+        gap: 2rem;
     }
 }
 
+@media (max-width: 395px) {
+    .Contact-headings {
+        padding: 1rem;
+    }
 
-@media  (max-width: 395px){
-    .contact{
-        height: auto;
-        width: 38rem;
+    .Contact-title {
+        font-size: 1.5rem; /* Adjust font size for very small screens */
     }
-    .Contact-greeting {
-        text-align: center;
-        font-size: 1rem;
-        color: grey;
+
+    .contact-name,
+    .contact-Email {
+        height: 2.5rem;
+        max-width: 100%; /* Full width for very small screens */
     }
-    
-    .Contact-headings{
-        padding: 2rem 5rem ;
-    }
-    .Contact-title{
-        text-align: center;
-        font-size: 3.5rem;
-        font-weight: bolder;
-    }
-    .contact-name , .contact-Email {
-        height: 3rem;
-        width: 25rem;
-        border-radius: 3rem;
-        padding: 1.5rem;
-        font-size: 1rem;
-        border: 1px solid black;
-        margin: 0.75rem;
-    }
-    
-    .contact-name::placeholder , .contact-Email::placeholder {
-        padding: 0.75rem;
-        font-size: 0.75rem;
-    }
+
     .contact-message {
-        height: Auto;
-        width: 25rem;
-        border-radius: 3rem;
-        padding: 0.75rem;
-        font-size: 0.75rem;
-        border: 1px solid black;
-        margin: 0.75rem;
+        height: 100px; /* Adjust height for very small screens */
+    }
+
+    .send-btn {
+        width: 100%;
+        max-width: 200px; /* Adjust width for very small screens */
+        height: 2.5rem;
+        font-size: 0.875rem; /* Adjust font size for very small screens */
+    }
+    .contact-info {
+        gap: 1.5rem;
     }
 }

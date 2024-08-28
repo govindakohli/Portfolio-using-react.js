@@ -1,58 +1,103 @@
-.skill{
-    height: auto;
+.skill {
     width: 100%;
-    /* margin: 1rem; */
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Adjust to match the theme */
 }
-.heading{
-    height: 5rem;
-    /* border: 2px solid black; */
-    margin: 5rem 1rem 3rem 1rem;
-}
-.skills-intro {
+
+.heading {
+    margin: 2rem auto 3rem auto;
     text-align: center;
+}
+
+.skills-intro {
     color: gray;
     font-size: 1rem;
-    padding-top: 1rem;
 }
+
 .skill-heading {
-    font-size: 3.5rem;
-    text-align: center;
-    /* padding: 1rem; */
-    /* letter-spacing: 10px; */
+    font-size: 2.5rem; /* Adjusted for better readability */
+    font-weight: bold;
+    color: #333; /* Adjust color to match the theme */
 }
-.skill-container{
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.front-end, .back-end {
+    background-color: white;
+    border: 2px solid #ddd; /* Adjust color to match the theme */
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+}
+
+.front-end-heading, .Back-end-heading {
+    font-size: 2rem;
+    color: #333; /* Adjust color to match the theme */
+    margin-bottom: 1rem;
+}
+
+.frontend-skill, .Backend-skill {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem; /* Adjust margin for better spacing */
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
-.front-end , .back-end {
-    margin: 2rem 1rem;
-    padding: 3rem;
-    border: 2px solid black;
-    border-radius: 3rem;
+
+.frontend-skill i, .Backend-skill i {
+    margin-right: 0.5rem; /* Adjust margin for icon spacing */
 }
-.front-end-heading , .Back-end-heading {
-    font-size: 2.5rem;
-    margin: 1rem;
-}
-.frontend-skill , .Backend-skill {
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-.frontend-skill i , .Backend-skill i {
- padding: 1rem;
- /* font-size: 1rem; */
-}
-@media (max-width: 767px){
-    .skill{
-        height: 60rem;
-        width: 100%;
+
+@media (max-width: 768px) {
+    .skill {
+        padding: 1.5rem;
+    }
+
+    .heading {
+        margin: 2rem 1rem;
+    }
+
+    .skill-heading {
+        font-size: 2rem; /* Adjust font size for better readability on smaller screens */
+    }
+
+    .front-end, .back-end {
+        padding: 1.5rem;
+        border: 2px solid #ddd;
+    }
+
+    .front-end-heading, .Back-end-heading {
+        font-size: 1.8rem;
+    }
+
+    .frontend-skill, .Backend-skill {
+        font-size: 1rem;
     }
 }
-@media  (max-width: 395px) {
-    .skill{
-        height: 60rem;
-        width: 38rem;
+
+@media (max-width: 450px) {
+    .skill {
+        padding: 1rem;
+    }
+
+    .skill-heading {
+        font-size: 1.5rem;
+    }
+
+    .front-end, .back-end {
+        padding: 1rem;
+        border: 1px solid #ddd; /* Thinner border for small screens */
+    }
+
+    .front-end-heading, .Back-end-heading {
+        font-size: 1.5rem;
+    }
+
+    .frontend-skill, .Backend-skill {
+        font-size: 0.875rem;
     }
 }

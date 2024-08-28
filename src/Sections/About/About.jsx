@@ -8,7 +8,7 @@ const About = () => {
       <section className="About-section">
         <div className="About-headings">
           <h5 className="About-greeting">Get To Know More</h5>
-          <h1 className="About-tittle">About Me</h1>
+          <h1 className="About-title">About Me</h1>
         </div>
         <div className="About-container">
           <div>
@@ -20,14 +20,15 @@ const About = () => {
           </div>
           <div className="About-subContainer">
             <div className="Education">
-              <h3 className="Education-tittle">Education</h3>
-              <h5 className="Education-sub-tittle">
+              <h3 className="Education-title">Education</h3>
+              <h5 className="Education-sub-title">
                 Diploma In Computer Science Engineering
               </h5>
-              <h5 className="Education-sub-tittle">
+              <h5 className="Education-sub-title">
                 Bachelor of Technology In Computer Science Engineering
               </h5>
             </div>
+            <br />
             <p className="About-bio">
               Hello! I'm Govinda, a passionate MERN stack developer with a
               recent BTech degree in Computer Science and Engineering,
