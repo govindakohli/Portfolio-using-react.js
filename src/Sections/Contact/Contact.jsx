@@ -26,8 +26,8 @@ const Contact = () => {
       );
   };
   const submitform= () =>{
-    // window.location.reload();
-    navigateTo("/");
+    window.location.reload();
+    // navigateTo("/");
   } 
 
   return (
