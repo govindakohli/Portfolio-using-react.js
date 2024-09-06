@@ -76,7 +76,7 @@ const Contact = () => {
             className="contact-message"
             placeholder="Enter Your Message"
           />
-          <input  type="submit" onClick={submitform} href="/Contact" className="send-btn" value="Send" />
+          <input  type="submit"   className="send-btn" value="Send" onClick={submitform} />
          
         </form>
       </section>
