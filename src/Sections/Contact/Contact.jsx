@@ -22,6 +22,9 @@ const Contact = () => {
         }
       );
   };
+  const submitform= () =>{
+    window.location.reload();
+  } 
 
   return (
     <>
@@ -73,7 +76,7 @@ const Contact = () => {
             className="contact-message"
             placeholder="Enter Your Message"
           />
-          <input type="submit" href="/Contact" className="send-btn" value="Send" />
+          <input  type="submit" onClick={submitform} href="/Contact" className="send-btn" value="Send" />
          
         </form>
       </section>
