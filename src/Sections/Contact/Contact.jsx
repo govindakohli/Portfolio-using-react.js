@@ -2,9 +2,12 @@ import React from "react";
 import "./Contact.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
+
 
 const Contact = () => {
   const form = useRef();
+  const navigateTo = useNavigate();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,6 +27,7 @@ const Contact = () => {
   };
   const submitform= () =>{
     window.location.reload();
+    navigateTo("/");
   } 
 
   return (
